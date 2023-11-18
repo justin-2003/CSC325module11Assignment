@@ -4,13 +4,17 @@
  */
 package NewDrawingSys;
 
+
+import com.mycompany.oldDrawingSys.Circle;
+import com.mycompany.oldDrawingSys.Rectangle;
+
 /**
  *
  * @author MoaathAlrajab
  */
 public class ModifiedSystem {
     public static void main(String[] args) {
-        Shape[] shapes = //add your code here;
+        Shape[] shapes = {new CircleAdapter(new Circle()), new RectangleAdapter(new Rectangle())};//add your code here;
         int x1 = 10, y1 = 20;
         int x2 = 30, y2 = 60;
         for (Shape shape : shapes) {
